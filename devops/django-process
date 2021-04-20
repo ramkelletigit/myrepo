@@ -1,0 +1,27 @@
+sudo apt install python3-pip
+
+# Linux
+sudo apt-get install python3-venv    # If needed
+python3 -m venv env
+
+# macOS
+python3 -m venv env
+
+# Windows
+python -m venv env
+
+
+python -m pip install --upgrade pip
+
+python -m pip install django
+
+django-admin startproject web_project .
+
+python manage.py migrate
+
+If you want to use a different port than the default 8000, 
+specify the port number on the command line, such as 
+
+python manage.py runserver 5000
+
+
